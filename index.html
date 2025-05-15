@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Baasic Calculator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body{
+            color: white;
+        }
+        .calculator *{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+        }
+    </style>
 </head>
-
 <body>
-    <aside>
-        <img src="./IM/TV.jpg" alt="Profile" class="logo" />
-
-        <section>
-            <h3>Skills</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-        </section>
-
-        <section>
-            <h3>Projects</h3>
-            <ol>
-                <li>Delivered my portfolio</li>
-                <li>Delivered Speed trap app</li>
-            </ol>
-        </section>
-    </aside>
-
-    <main>
-        <header>
-            <h2>Hello, I am Arthur</h2>
-            <p>
-                creating responsive graphical user interface to emprove your software navigation experience.
-            </p>
-        </header>
-
-        <section class="contact">
-            <h3>Contact me</h3>
-            <form onsubmit="return submitForm()">
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" rows="6" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 arthur</p>
-        </footer>
-    </main>
-
-    <script src="MobileApp1.js"></script>
+    <div class="w-full h-screen bg-gray-700 flex justify-center items-center">
+        <div class="w-[200px] h-fit bg-gray-800 rounded-xl p-2">
+            <input type="text" class="w-full h-[50px] bg-gray-900 rounded-xl text-right px-4 font-semibold text-2xl" value="0" disabled>
+            <div class="calculator grid grid-cols-4 mt-2 gap-2">
+                <div class="col-span-2 h-[45px] bg-gray-900">AC</div>
+                <div class="col-span-2  h-[45px] bg-gray-900">ᑉ</div>
+                <div class="col-span-1 aspect-square bg-gray-900">7</div>
+                <div class="col-span-1 aspect-square bg-gray-900">8</div>
+                <div class="col-span-1 aspect-square bg-gray-900">9</div>
+                <div class="col-span-1 aspect-square bg-gray-900">/</div>
+                <div class="col-span-1 aspect-square bg-gray-900">4</div>
+                <div class="col-span-1 aspect-square bg-gray-900">5</div>
+                <div class="col-span-1 aspect-square bg-gray-900">6</div>
+                <div class="col-span-1 aspect-square bg-gray-900">*</div>
+                <div class="col-span-1 aspect-square bg-gray-900">1</div>
+                <div class="col-span-1 aspect-square bg-gray-900">2</div>
+                <div class="col-span-1 aspect-square bg-gray-900">3</div>
+                <div class="col-span-1 aspect-square bg-gray-900">-</div>
+                <div class="col-span-1 aspect-square bg-gray-900">0</div>
+                <div class="col-span-1 aspect-square bg-gray-900">√</div>
+                <div class="col-span-1 aspect-square bg-gray-900">=</div>
+                <div class="col-span-1 aspect-square bg-gray-900">+</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
-</html>
-
 </html>
